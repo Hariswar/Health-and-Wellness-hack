@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retro Mario Kart Clicker</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="game-container">
+    <!-- Header -->
+    <header>
+      <div class="header-content">
+        <h1><span class="icon">🏎️</span> SUPER MARIO KART CLICKER</h1>
+        <div class="stats-bar">
+          <div class="stat">
+            <span class="icon">🪙</span>
+            <span id="coin-counter">0</span>
+          </div>
+          <div class="stat">
+            <span class="icon">⚡</span>
+            <span id="coins-per-second">0.0</span>/s
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main content -->
+    <main>
+      <!-- Left panel - Clicker -->
+      <div class="clicker-panel">
+        <div id="coin-button" class="coin-button">
+          <span class="coin-icon">🪙</span>
+        </div>
+        <p class="coins-per-click">+<span id="coins-per-click">1.0</span> COINS PER CLICK</p>
+        <p class="total-clicks">TOTAL CLICKS: <span id="total-clicks">0</span></p>
+        
+        <div class="stats-container">
+          <div class="stats-header">
+            <h2>STATS</h2>
+            <button id="toggle-view" class="toggle-button">
+              UPGRADES <span class="arrow-icon">▲</span>
+            </button>
+          </div>
+          
+          <div class="stats-box">
+            <div class="stat-row">
+              <span>COINS PER CLICK:</span>
+              <span id="cpc-stat">1.0</span>
+            </div>
+            <div class="stat-row">
+              <span>COINS PER SECOND:</span>
+              <span id="cps-stat">0.0</span>
+            </div>
+            <div class="stat-row">
+              <span>MULTIPLIER:</span>
+              <span id="multiplier-stat">x1.0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right panel - Shop -->
+      <div class="shop-panel">
+        <h2 id="shop-title">RACERS</h2>
+        
+        <div id="characters-shop" class="shop-items">
+          <!-- Characters will be added here by JavaScript -->
+        </div>
+        
+        <div id="upgrades-shop" class="shop-items hidden">
+          <!-- Upgrades will be added here by JavaScript -->
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>SUPER MARIO KART CLICKER © 1992-2025 - PRESS START TO RACE!</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
